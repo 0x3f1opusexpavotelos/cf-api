@@ -33,6 +33,7 @@ bunx wrangler d1 execute cfd1 --remote --file=drizzle/migrations/0000_spooky_mal
 # merge with new github repo
 git merge --allow-unrelated-histories <remote-name>/<branch-name>
 git pull origin main --allow-unrelated-histories
+git push --set-upstream origin main
 ```
 
 then go to your GitHub repository settings dashboard: `Settings->Secrets and variables->Actions->Repository secrets`, and add a new secret with the name `CLOUDFLARE_API_TOKEN`
