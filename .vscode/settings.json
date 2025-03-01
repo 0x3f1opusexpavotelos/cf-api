@@ -1,0 +1,126 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "vue.server.includeLanguages": [
+    "vue",
+    "markdown"
+  ],
+  "[markdown][yaml][json]": {
+    // "editor.fontFamily": "Input Mono, monospace",
+    "editor.renderWhitespace": "all",
+  },
+  // layout
+  "workbench.sideBar.location": "right",
+  "explorer.sortOrder": "type",
+  // "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
+  "files.autoSave": "onFocusChange",
+  "debug.toolBarLocation": "docked",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line",
+  // -----------------------------------------------------------------------------
+  // IntelliSense: auto-suggestion and completion
+  // -----------------------------------------------------------------
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.tabCompletion": "on",
+  "editor.snippetSuggestions": "top",
+
+
+  // ========== Visuals ==========
+  "editor.guides.bracketPairs": "active",
+  "editor.lineNumbers": "interval",
+  "editor.renderWhitespace": "boundary",
+  "workbench.editor.tabActionLocation": "left",
+  "workbench.list.smoothScrolling": true,
+  "workbench.startupEditor": "newUntitledFile",
+  // ========== Font Family ==========
+  // "editor.fontFamily": "ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;", // github primer choice
+  "editor.fontFamily": "Input Mono, monospace",
+  // "editor.fontFamily": "Cascadia Code, Consolas,'Monasapce Argon','Fira Code', monospace",
+  "editor.fontWeight": "600",
+  "editor.fontLigatures": false,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font ",
+  "terminal.integrated.fontLigatures": true,
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 10,
+  // "workbench.fontAliasing": "antialiased",
+
+  // ========== Theme ==========
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.preferredDarkColorTheme": "Vitesse Dark Soft",
+  "workbench.preferredLightColorTheme": "Vitesse Light",
+  "window.autoDetectColorScheme": true,
+  "workbench.colorTheme": "Vitesse Dark",
+
+  // ========== Editor ==========
+  "files.exclude": {
+    "**/.git": false,
+    "**/.nuxt": false,
+    "**/.wrangler": false,
+    "**/.next": false,
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.suggestSelection": "first",
+  "editor.stickyScroll.enabled": true,
+  "editor.hover.sticky": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "git.enableSmartCommit": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontWeight": "300",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "errorLens.enabledDiagnosticLevels": [
+    "warning",
+    "error"
+  ],
+  "errorLens.excludeBySource": [
+    "cSpell",
+    "Grammarly",
+    "eslint"
+  ],
+
+  // ESLint config: https://github.com/antfu/eslint-config
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.quiet": true,
+  // Silent the stylistic rules in you IDE, but still auto fix them
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off" },
+    { "rule": "format/*", "severity": "off" },
+    { "rule": "*-indent", "severity": "off" },
+    { "rule": "*-spacing", "severity": "off" },
+    { "rule": "*-spaces", "severity": "off" },
+    { "rule": "*-order", "severity": "off" },
+    { "rule": "*-dangle", "severity": "off" },
+    { "rule": "*-newline", "severity": "off" },
+    { "rule": "*quotes", "severity": "off" },
+    { "rule": "*semi", "severity": "off" }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml"
+  ],
+}

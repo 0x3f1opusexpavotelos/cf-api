@@ -1,0 +1,27 @@
+# prod
+dist/
+
+# dev
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/*.code-snippets
+
+
+# deps
+node_modules/
+
+# env
+.env
+.env*.local
+.dev.vars
+
+# logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+
+# misc
+.DS_Store

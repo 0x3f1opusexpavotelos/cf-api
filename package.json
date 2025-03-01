@@ -1,0 +1,20 @@
+{
+  "name": "cfapi",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "play": "bun src/index.ts",
+    "db:studio": "bunx wrangler d1 execute cfd1 --remote --file=drizzle/migrations/0000_spooky_malcolm_colcord.sql"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "drizzle-orm": "^0.40.0",
+    "hono": "^4.7.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "dotenv": "^16.4.7",
+    "drizzle-kit": "^0.30.5",
+    "wrangler": "^3.109.2"
+  }
+}
