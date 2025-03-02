@@ -1,10 +1,12 @@
 {
   "name": "cfapi",
   "scripts": {
-    "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts",
-    "play": "bun src/index.ts",
-    "db:studio": "bunx wrangler d1 execute cfd1 --remote --file=drizzle/migrations/0000_spooky_malcolm_colcord.sql"
+    "dev": "wrangler dev app/index.ts",
+    "deploy": "wrangler deploy --minify app/index.ts",
+    "play": "wrangler dev app/index.ts",
+    "db:generate": "drizzle-kit generate --config drizzle.config.ts",
+    "db:migrate": "wrangler d1 execute cfd1 --local --file=app/drizzle/migrations/0000_spooky_malcolm_colcord.sql",
+    "db:studio": "wrangler d1 execute cfd1 --local --file=app/drizzle/migrations/0000_spooky_malcolm_colcord.sql"
   },
   "dependencies": {
     "@libsql/client": "^0.14.0",

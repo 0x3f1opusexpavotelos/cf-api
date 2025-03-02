@@ -1,8 +1,10 @@
-name = "cfapi"
-main = "src/index.ts"
+name = "cfapi"  # worker instance name
+main = "app/index.ts" # app entry
 minify = true
 compatibility_date = "2025-02-14"
 [[d1_databases]]
+# expose in your worker on  env.DB
+# our D1 database is now accessible via the DB binding
 binding = "CFDB"
 database_name = "cfd1"
 database_id = "22a2e03b-f982-48ae-8c76-d74839a29803"

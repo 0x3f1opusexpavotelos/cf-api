@@ -6,8 +6,8 @@ config({path: ".env.local"})
 
 export default defineConfig({
     dialect: "sqlite",
-    schema: "db/schema.ts",
-    out: "drizzle/migrations",
+    schema: "app/db/schema.ts",
+    out: "app/drizzle/migrations",
     driver: 'd1-http',
     dbCredentials: {
         accountId: process.env.CLOUDFLARE_ACCOUNT_ID!,
